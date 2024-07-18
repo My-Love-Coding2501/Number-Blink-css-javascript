@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    background: rgb(10, 10, 10);
+}
+
+.numbers{
+    position: relative;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.numbers span{
+    position: relative;
+    font-size: 3em;
+    font-weight: 900;
+    color: rgb(20, 25, 30);
+    line-height: 0.9em;
+    transition: 4s;
+    user-select: none;
+}
+
+.numbers span:hover{
+    transition: 0s;
+    color: #fff;
+    text-shadow: 0 0 15px blue,0 0 20px blue,0 0 40px green,
+    0 0 80px black,0 0 160px rgb(5, 184, 248);
+}
